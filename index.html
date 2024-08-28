@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task-IT</title>
+  <script type="module" crossorigin src="/assets/index-f2aSPBKG.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CRd71Kob.css">
+</head>
+
+<body>
+  <main>
+    <!-- Toggle theme button ------------------------------------------------------------ -->
+    <div class="header-container">
+      <h1 id="my-list">TASK-IT</h1>
+      <button id="themeToggle" class="button theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Toggle theme button ------------------------------------------------------------ -->
+
+    <h1 class="offscreen">My List</h1>
+
+    <section class="newItemEntry">
+      <h2 class="offscreen">New Item Entry</h2>
+      <form class="newItemEntry__form" id="itemEntryForm">
+        <label for="newItem" class="offscreen">Enter a new to do item</label>
+        <input class="newItemEntry__input" id="newItem" type="text" maxlength="40" autocomplete="off"
+          placeholder="Add task" />
+        <button id="addItem" class="button newItemEntry__button" title="Add new item" aria-label="Add new item to list">
+          +
+        </button>
+      </form>
+    </section>
+
+    <section class="listContainer">
+      <header class="listTitle">
+        <h2 id="listName">My List</h2>
+        <button id="clearItemsButton" class="button listTitle__button" title="Clear the list" aria-label="Remove all items from the list">
+          Clear
+        </button>
+      </header>
+      <hr />
+      <ul id="listItems">
+        <!-- <li class="item">
+                    <input type="checkbox" id="1">
+                    <label for="1">eat</label>
+                    <button class="button">X</button>
+                </li>
+                <li class="item">
+                    <input type="checkbox" id="2">
+                    <label for="2">sleep</label>
+                    <button class="button">X</button>
+                </li>
+                <li class="item">
+                    <input type="checkbox" id="3">
+                    <label for="3">code</label>
+                    <button class="button">X</button>
+                </li> -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div style="text-align: center;">
+      <a style="text-decoration-line: none; color: var(--text-color);" href="http://clix.dev" target="_blank">Wilver Arriaza</a>            
+    </div> 
+  </footer>
+</body>
+
+</html>
